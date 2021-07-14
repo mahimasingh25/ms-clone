@@ -1,0 +1,412 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+.img {
+    max-width: 100%;
+}
+
+a {
+    color: #262626;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    background: #262626;
+    padding: 0.5em 0.5em;
+    margin: 0.8em 0;
+    border: 0;
+}
+
+.card-link {
+    color: #0067b8;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+
+/* Nav-bar */
+
+
+.main-nav {
+    display: none;
+}
+
+
+/* Showcase */
+
+
+.showcase{
+    background: #f2f2f2;
+}
+
+.showcase-content {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+
+.showcase-text {
+    margin: 5rem 2.5rem;
+    text-align: center;
+    font-size: 1em;
+}
+
+.showcase-text h2 {
+    font-size: 1.5em;
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+}
+
+.showcase-text p {
+    padding-bottom: 1.5rem;
+}
+
+.showcase-img img{
+    max-width: 100%;
+}
+
+
+
+/* Icons */
+
+
+.icons {
+    margin: 4rem 2rem;
+}
+
+.icons-item {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.icons-item p{
+    margin: auto 1rem;
+    font-weight: 500;
+
+}
+
+
+/* Cards */
+.cards {
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.cards div {
+    margin-bottom: 4rem;
+}
+
+.cards h2 {
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.cards > div > img {
+    width: 100%;
+}
+
+
+/* Edge */
+
+.edge {
+    background: #f2f2f2;
+}
+
+.edge-img > img {
+    width: 100%;
+}
+
+.edge-content {
+    margin: 5rem 2.5rem;
+    text-align: center;
+    font-size: 1em;
+    padding-bottom: 5rem;
+}
+
+.edge h2 {
+    font-weight: 500;
+}
+
+
+/* Business Cards */
+
+.business-cards {
+    margin: auto;
+    width: 90%;
+    margin-top: 3rem;
+}
+
+.business-cards > h2 {
+    padding-bottom: 2rem;
+}
+
+.business-cards > .cards {
+    width: 100%;
+}
+
+
+/* Covid-19 */
+
+.covid-19 {
+    background: #f2f2f2;
+    padding: 1rem;
+    text-align: center;
+}
+
+.covid-19 > h1 {
+    font-weight: 600;
+    font-size: 1.8em;
+}
+
+.card-link-covid {
+    color: #262626;
+}
+
+/* Social-medias */
+
+.social-media {
+    margin: 3rem auto;
+    width: 90%;
+}
+
+.fa-facebook-square {
+    color: #4267B2;
+    font-size: 2em;
+    padding: 0 0.5rem;
+}
+
+.fa-twitter-square {
+    color: 	#1DA1F2;
+    font-size: 2em;
+    padding: 0 0.5rem;
+}
+
+.fa-youtube-square {
+    color: #FF0000;
+    font-size: 2em;
+    padding: 0 0.5rem;
+}
+
+/* What's New */
+
+.whats-new {
+    background: #f2f2f2;
+    margin: auto;
+}
+
+.whats-new > div {
+    width: 90%;
+    margin: auto;
+    color: #616161;
+}
+
+.whats-new ul {
+    padding: 2rem 0;
+}
+
+.whats-new ul li h3 {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.whats-new ul li a {
+    color: #616161;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 3.5em;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 540px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards > div {
+        width: 90%;        
+    }
+
+    .business-cards {
+        width: 90%;
+        margin: auto;
+    }
+
+    .whats-new-div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    
+}
+
+
+@media (min-width: 768px) {
+
+    /* showcase */
+
+    .showcase-content {
+        flex-direction: row;
+        justify-content: space-between;        
+    }
+
+    .showcase-img {
+        display: flex;
+        align-items: center;
+        width: 60%;
+        
+    }
+
+    .showcase-text {
+        width: 40%;
+        text-align: left;
+    }
+
+    /* Icons */
+
+    .icons>ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .icons-item {
+        display: block;
+        padding: 1rem;
+        width: 85%;
+    }
+
+    .icons-item p{
+        margin: auto;
+        font-weight: 500;
+        
+    }
+
+    .icons-item h1{
+        font-size: 2.5em;
+    }
+
+
+    /* edge */
+
+    .edge {
+        background-image: url(../images/Edge3.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 0.5rem 0 14rem 0;
+
+    }
+
+    .edge-img {
+        display: none;
+    }
+
+    /* business-cards */
+
+    .business-cards {
+        margin-top: 3rem;
+    }
+
+
+    /* covid-19 */
+
+    .covid-19 > h1 {
+        font-size: 2.3em;
+    }
+    
+}
+
+
+@media (min-width: 1084px) {
+
+    .container {
+        width: 90%;
+        max-width: 1600px;
+        margin: auto;
+    }
+
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+    }
+
+    /* edge */
+
+    .edge {
+        background-image: url(../images/Edge5.jpg);
+        padding: 0.5rem 0 14rem 0;
+
+    }
+
+    .edge-content {
+        margin: 5rem 2.5rem;
+        text-align: center;
+        font-size: 1em;
+        padding-bottom: 5rem;
+    }
+
+    /* business-cards */
+
+    .business-cards {
+        width: 100%;
+    }
+
+
+    /* Social-medis */
+
+    .social-media {
+        width: 100%;
+    }
+
+    /* What's New */
+
+    .whats-new-div {
+        grid-template-columns: repeat(6, 1fr);
+        max-width: 1600px;
+    }
+    
+
+
+
+}
+
+@media (min-width: 1400px) {
+    .showcase-text h2 {
+        font-size: 2.2em;
+        font-weight: 500;
+        padding-bottom: 1.5rem;
+    }
+}
