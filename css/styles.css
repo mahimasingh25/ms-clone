@@ -505,10 +505,6 @@ footer {
         flex: 1;
         padding: 0 0.937rem;
     }
-    
-    .main-nav ul li a:hover{
-        border-bottom: 3px solid #262626;
-    }
 
     .more-item {
         display: none;
