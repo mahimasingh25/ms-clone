@@ -49,12 +49,70 @@ li {
 }
 
 
+
+
 /* Nav-bar */
 
+.nav-btn {
+    cursor: pointer;
+    display: block;
+}
+
+
+.nav-btn:hover {
+    opacity: 0.5;
+}
+
+.fa-chevron-down {
+    font-size: 0.8em;
+}
+
+.container .logo{
+    width: 110px;
+}
 
 .main-nav {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.main-menu {
     display: none;
 }
+
+.more-item {
+    display: none;
+    padding-right: 0.5rem;
+}
+
+.right-menu {
+    display: flex;
+}
+
+.right-menu a {
+    padding-left: 1rem;;
+}
+
+.all-microsoft {
+    display: none;
+}
+
+.fa-user-circle {
+    font-size: 1.5em;
+}
+
+.search, 
+.cart,
+.sign-in {
+    display: flex;
+    align-items: center;
+}
+
+
 
 
 /* Showcase */
@@ -243,6 +301,35 @@ li {
 }
 
 
+/* Footer */
+
+footer {
+    background: #f2f2f2;
+    margin: 0 auto;
+    color: #616161;
+    font-weight: 400;
+    font-size: 0.7rem;
+    line-height: 2.5em;
+}
+
+.footer {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.right-footer a {
+    padding-right: 1rem;
+}
+
+.right-footer p {
+    display: inline;
+}
+
+.fa-globe {
+    font-size: 2em;
+    padding-right: 0.5rem;
+}
 
 
 
@@ -346,17 +433,81 @@ li {
     .covid-19 > h1 {
         font-size: 2.3em;
     }
+
+
+    /* Footer */
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
     
+}
+
+@media (min-width: 860px) {
+
+    .nav-btn {
+        display: none;
+    }
+
+    .main-nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        padding: 0.937rem 0;
+        font-size: 0.9em;
+    }
+    
+    .main-nav ul{
+        display: flex;
+    }
+    
+    .main-nav ul li{
+        padding: 0 0.5rem;
+    }
+    
+    .main-nav ul.main-menu{
+        flex: 1;
+        padding: 0 0.937rem;
+    }
+    
+    .main-nav ul li a:hover{
+        border-bottom: 3px solid #262626;
+    }
+
+    .more-item {
+        display: none;
+    }
 }
 
 
 @media (min-width: 1084px) {
 
+    
     .container {
         width: 90%;
         max-width: 1600px;
         margin: auto;
     }
+
+
+    /* Nav */
+
+    .main-nav {
+        width: 100%;
+    }
+
+    .more-item {
+        display: block;
+    }
+
+    .more-btn {
+        display: none;
+    }
+
+
+    /* Cards */     
 
     .cards {
         grid-template-columns: repeat(4, 1fr);
